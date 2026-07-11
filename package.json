@@ -1,0 +1,12 @@
+{
+  "name": "blood-donation-web",
+  "private": true,
+  "scripts": {
+    "dev": "concurrently -n backend,frontend -c blue,magenta \"npm run dev:backend\" \"npm run dev:frontend\"",
+    "dev:frontend": "npm run dev --prefix frontend",
+    "dev:backend": "cd backend && .\\mvnw.cmd spring-boot:run"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  }
+}
