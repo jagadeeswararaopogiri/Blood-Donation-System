@@ -26,8 +26,14 @@ export default function LoginPage() {
 
   return (
     <div className={centerPage}>
-      <h2 className="text-center text-3xl font-bold text-red-600 mb-2"> Blood Donation System </h2>
-        <p className="text-center text-gray-500 mb-6">Connecting Donors, Saving Lives ❤️</p>
+      <div className="text-center mb-8">
+  <h2 className="text-4xl font-bold text-red-600">Blood Donation System</h2>
+
+  <p className="mt-2 text-gray-400 text-lg">
+    Connecting Donors, Saving Lives ❤️
+  </p>
+</div>
+
       <div className={card}>
         <h1 className={h1}>Login</h1>
         <p className={muted}>Access your donor/receiver dashboard.</p>
